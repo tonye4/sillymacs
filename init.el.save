@@ -156,9 +156,7 @@
 
 (use-package org-bullets
   :ensure t
-  :init
-  (add-hook 'org-mode-hook (lambda()
-			     (org-bullets-mode 1))))
+  :init (org-bullets-mode 1))
 
 ;; Syntax checking
 (use-package flycheck
@@ -167,5 +165,4 @@
   (global-flycheck-mode))
 
 (setq custom-file "~/.emacs.d/custom.el") ; is a way to get rid of the custom file clutter
-(load custom-file) 
-
+K
